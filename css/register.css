@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../assets/vapor.gif);
+  backdrop-filter: blur(2px);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+/* #title {
+  color: #f5f5f5;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 75px;
+} */
+
+#title2 {
+  color: #f5f5f5;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: blur(0.5px);
+  text-shadow: 1px 1px 10px rgb(119, 0, 255),
+    1px 4px 20px rgba(174, 0, 255, 0.25);
+}
+
+#credentials {
+  font-size: 25px;
+  font-family: "Lexend Deca", sans-serif;
+  width: 400px;
+  height: 750px;
+  margin: auto;
+  padding: 70px;
+  border-radius: 50px;
+  background-color: rgba(55, 49, 99, 0.75);
+  text-align: center;
+  transition: 200ms;
+  /* box-shadow: 1px 1px 20px rgb(183, 0, 255), 0 4px 8px rgba(0, 0, 0, 0.25); */
+}
+#credentials:hover {
+  box-shadow: 1px 1px 20px rgb(183, 0, 255), 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+#textboxes {
+  margin-top: -20px;
+  color: #f5f5f5;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#textboxes input {
+  width: 400px;
+  height: 40px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 20px;
+  font-size: 25px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+#textboxes input:focus {
+  box-shadow: 1px 1px 20px #f99417;
+}
+
+#genders {
+  color: #f5f5f5;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 20px;
+}
+#genders p {
+  font-weight: bolder;
+  margin-left: -20px;
+}
+#genders input {
+  scale: 3;
+  transition: 500ms;
+}
+#genders input:hover {
+  scale: 5;
+}
+
+#genders label {
+  margin-left: 20px;
+}
+
+.submit_btn {
+  /* display: none; */
+  margin-top: 60px;
+  border-radius: 50px;
+  transition: 100ms;
+  border: none;
+  width: 400px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 25px;
+  color: #f5f5f5;
+  background-color: #f99417;
+  box-shadow: 0 0px 10px #f99417;
+  transition: 500ms;
+}
+.submit_btn:hover {
+  box-shadow: 0 0px 25px #f99417;
+}
+
+.logoUtama {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  scale: 1;
+}

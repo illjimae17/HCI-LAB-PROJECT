@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../assets/b883fc84b57235e6fe57f409716ae68d.gif);
+  backdrop-filter: blur(2px);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+/* navbar dkk */
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-pokemon {
+  width: 190px;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  width: 30px;
+  cursor: pointer;
+  filter: invert();
+  margin-left: 40px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20 px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  font-size: 25px;
+  color: #f99417;
+}
+/* end of navbar dkk */
+
+/* slides content dkk */
+h1 {
+  margin-top: 5%;
+  color: white;
+  font-size: 90px;
+}
+p {
+  color: white;
+  font-size: 15px;
+  line-height: 17px;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+#registerBtn {
+  color: white;
+  width: 300px;
+  height: 50px;
+  background-color: #f99417;
+  font-size: 20px;
+  padding: 12px 0;
+  margin-top: 30px;
+  margin-left: 5px;
+  border: 0;
+  border-radius: 50px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+#registerBtn:hover {
+  box-shadow: 0 0px 10px #f99417;
+}
+#newsBtn {
+  color: white;
+  width: 300px;
+  height: 50px;
+  background-color: #f94c17;
+  font-size: 20px;
+  padding: 12px 0;
+  margin-top: 30px;
+  margin-left: 5px;
+  border: 0;
+  border-radius: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+#newsBtn:hover {
+  box-shadow: 0 0px 10px #f94c17;
+}
+#tourneyBtn {
+  color: white;
+  width: 300px;
+  height: 50px;
+  background-color: #a217f9;
+  font-size: 15px;
+  padding: 12px 0;
+  margin-top: 30px;
+  margin-left: 5px;
+  border: 0;
+  border-radius: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+#tourneyBtn:hover {
+  box-shadow: 0 0px 10px #a217f9;
+}
+/* end of slides content dkk */
+
+/* carousel function */
+.carousel-button {
+  position: absolute;
+  background: none;
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-size: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+.carousel-button.next {
+  right: 1rem;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: none;
+  padding: 110px;
+  margin: 20px;
+  transition: 200ms ease-in-out;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.slides[data-active] {
+  display: block;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*end carousel function */

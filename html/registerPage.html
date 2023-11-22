@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="../css/register.css" />
+    <script src="../script/register_script.js"></script>
+  </head>
+  <style>
+
+  </style>
+  <body>
+    <div class="wrapper">
+      <!-- <h1 id="title">VokemonS</h1><br> -->
+      <img src="../assets/pngegg4.png" alt="logo-pokemon" class="logoUtama">
+
+      <h2 id="title2">Register Page</h1><br>
+  
+        <div id="credentials">
+          <form id="registerForm" action="../script/register_script.js">
+            <div id="textboxes"> <label for="name">Name</label> <br />
+              <input type="text" id="name" /> <br />
+              <br />
+              <label for="email">Email</label> <br />
+              <input type="text" id="email" /> <br />
+              <br />
+              <label for="password">Password</label> <br />
+              <input type="password" id="password" /> <br />
+              <br />
+              <label for="confirmPass">Confirm Password</label> <br />
+              <input type="password" id="confirmPass" name="confirmPass"/> <br /> <br />
+            </div>
+            <div id="genders" name="gender_select"><p>Gender :</p><br /> <br>
+              <input type="radio" id="male" name="genders" value="male" />
+              <label for="gender">Male</label> <br />  <br /> <br>
+              <input type="radio" id="female" name="genders" value="female" />
+              <label for="gender">Female</label> <br />  <br /> <br>
+              <input type="radio" id="prefnotsay" name="genders" value="prefnotsay" />
+              <label for="gender">Prefer not to say</label>
+              <br />
+            </div>
+                <button class="submit_btn" type="submit"> Submit</button>
+          </form>
+  
+        <div>
+  
+    </div>
+
+   
+   
+    
+  </body>
+</html>

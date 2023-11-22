@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+    .carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .carousel-button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .slides {
+      display: none;
+      padding: 20px;
+      border: 1px solid black;
+      margin: 20px;
+      animation: slide-in 1s forwards;
+    }
+
+    .slides[data-active] {
+      display: block;
+    }
+
+    @keyframes slide-in {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+ </style>
+</head>
+<body>
+ <div class="carousel" data-carousel>
+    <button class="carousel-button prev" data-carousel-button="prev">&#10096;</button>
+    <ul data-slides>
+      <div class="slides" data-active>
+        <h1>Catch Them All!</h1>
+        <p>
+          Register now to start your journey of catching 'em all! By signing up on our Pokemon website,
+          you'll be able to trade and battle with other passionate trainers, explore new regions, participate in unique events,
+          and get the latest game updates. Don't miss out on building your dream team - become an official Pokemon trainer today!
+        </p>
+        <button id="registerBtn">Register Now</button>
+      </div>
+      <div class="slides">
+        <h1>test1</h1>
+        <p>
+          Lorem ipsum dolor sit amet.
+        </p>
+        <button id="registerBtn">Register Now</button>
+      </div>
+      <div class="slides">
+        <h1>test2</h1>
+        <p>
+          Lorem ipsum dolor sit amet.
+        </p>
+        <button id="registerBtn">Register Now</button>
+      </div>
+    </ul>
+    <button class="carousel-button next" data-carousel-button="next">&#10097;</button>
+ </div>
+
+ <script>
+    const carousel = document.querySelector('[data-carousel]');
+    const slides = document.querySelectorAll('[data-slides] > .slides');
+    const prevButton = document.querySelector('[data-carousel-button="prev"]');
+    const nextButton = document.querySelector('[data-carousel-button="next"]');
+    let currentSlide = 0;
+
+    const hideAllSlides = () => {
+      slides.forEach(slide => slide.removeAttribute('data-active'));
+    };
+
+    const showSlide = (index) => {
+      hideAllSlides();
+      slides[index].setAttribute('data-active', '');
+    };
+
+    prevButton.addEventListener('click', () => {
+      currentSlide = (currentSlide + slides.length - 1) % slides.length;
+      showSlide(currentSlide);
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    });
+ </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homepage</title>
+    <link rel="stylesheet" href="../css/homePage.css" />
+    <script src="../script/home_script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <!-- <div class="logo-pokemon" name="logo-pokemon"> -->
+        <img
+          src="../assets/pngegg4.png"
+          alt="logo pokemon"
+          class="logo-pokemon"
+        />
+        <nav>
+          <ul>
+            <li><a href="../html/homePage.html">Home</a></li>
+            <li><a href="../html/newsPage.html">News</a></li>
+            <li><a href="../html/vokemonPage.html">Vokemons</a></li>
+            <li><a href="../html/tourneyPage.html">Tournament</a></li>
+            <li><a href="../html/registerPage.html">Sign Up</a></li>
+          </ul>
+        </nav>
+        <img
+          src="../assets/density_medium_FILL0_wght400_GRAD0_opsz24.svg"
+          alt="hamburger-menu"
+          class="hamburger-menu"
+        />
+      </div>
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#10096;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#10097;</button>
+        <ul data-slides=>
+          <div class="slides" data-active>
+            <h1>Catch Them All!</h1>
+              <p>
+                Register now to start your journey of catching 'em all! By signing up on our Pokemon website,
+                you'll be able to trade and battle with other passionate trainers, explore new regions, participate in unique events,
+                and get the latest game updates. Don't miss out on building your dream team - become an official Pokemon trainer today!
+              </p>
+            <button id="registerBtn">Register Now</button>
+          </div>
+          <div class="slides">
+            <h1>Stay in the loop!</h1>
+              <p>
+                Our news page keeps you current on the latest game releases,
+                events, updates, and more. From new Pokémon reveals to competitions to version updates that give you an edge,
+                it's your insider source for info. Make reading the news page a habit so you're the most knowledgeable trainer out there!
+                Check it often to be in-the-know and catch 'em all!
+              </p>
+            <button id="newsBtn">Go To The News Page</button>
+          </div>
+          <div class="slides">
+            <h1>Can't miss the action!</h1>
+              <p>
+                Tune into our website's tournament page for the premier VokemonS pro circuit.
+                Watch the world's top trainers battle with high-level skills and combos. Learn new strategies. Test your predictions.
+              </p>
+            <button id="tourneyBtn">Go To The Tournament Page</button>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
