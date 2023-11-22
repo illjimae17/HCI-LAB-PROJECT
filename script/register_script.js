@@ -6,39 +6,61 @@ window.onload = function () {
 
       let name = document.getElementById("name").value;
       let email = document.getElementById("email").value;
+
       let password = document.getElementById("password").value;
       let confirmPassword = document.getElementById("confirmPass").value;
       let gender = document.querySelector(
         'input[name="genders"]:checked'
       ).value;
+      let isValid = false;
 
+      // Email Validation
       function validateEmail(email) {
-        var atSymbol = email.indexOf("@");
-        var dotSymbol = email.lastIndexOf(".");
-        var spaceSymbol = email.indexOf(" ");
+        let emailParts = email.split("@");
 
-        if (
-          atSymbol != -1 &&
-          atSymbol != 0 &&
-          dotSymbol != -1 &&
-          dotSymbol != 0 &&
-          dotSymbol > atSymbol + 1 &&
-          email.length > dotSymbol + 1 &&
-          spaceSymbol == -1
-        ) {
-          return true;
-        } else {
+        if (emailParts.length !== 2) {
           return false;
         }
+
+        let domainParts = emailParts[1].split(".");
+
+        if (domainParts.length < 2) {
+          return false;
+        }
+
+        return true;
       }
 
+      if (!validateEmail(email)) {
+        alert("Invalid Email Address");
+        isValid = false;
+      }
+      // end of Email Validation
+
+      // Terms and condition validation
+      if (!document.getElementById("terms_btn").checked) {
+        alert("Terms and condition agreement must be checked");
+        isValid = false;
+      } else {
+        isValid = true;
+      }
+      // end of Terms and condition validation
+
+      // Password validation
       if (password !== confirmPassword) {
         alert("Passwords do not match.");
+        isValid = false;
         return;
-      } else if (validateEmail !== true) {
-        alert("Email address is not valid.");
-        return;
+      } else {
+        isValid = true;
       }
+      // end of Password validation
+
+      //creds validation
+      if (isValid !== false) {
+        console.log("registration success");
+      }
+      //end of creds validation
 
       let formData = {
         name: name,
@@ -48,6 +70,5 @@ window.onload = function () {
       };
 
       console.log("Form data:", formData);
-      // Add your server-side validation and submission logic here
     });
 };
