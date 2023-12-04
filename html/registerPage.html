@@ -8,14 +8,41 @@
     <script src="../script/register_script.js"></script>
   </head>
   <style>
-
   </style>
   <body>
-    <div class="wrapper">
+    <div class="parallax">
+      <div class="container">
+        <!-- navbar starts here -->
+      <div class="navbar">
+        <a href="../html/homePage.html">
+          <img
+            src="../assets/pngegg4.png"
+            alt="logo pokemon"
+            class="logo-pokemon"
+          />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../html/homePage.html">Home</a></li>
+            <li><a href="../html/newsPage.html">News</a></li>
+            <li><a href="../html/pokemonPage.html">Pokemons</a></li>
+            <li><a href="../html/tourneyPage.html">Tournament</a></li>
+            <li><a href="../html/registerPage.html">Sign Up</a></li>
+          </ul>
+        </nav>
+        <img
+          src="../assets/density_medium_FILL0_wght400_GRAD0_opsz24.svg"
+          alt="hamburger-menu"
+          class="hamburger-menu" 
+        />
+      </div>
+      <!-- navbar ends here  -->
+     <div class="wrapper">
       <!-- <h1 id="title">VokemonS</h1><br> -->
-      <img src="../assets/pngegg4.png" alt="logo-pokemon" class="logoUtama">
-
-      <h2 id="title2">Register Page</h1><br>
+      <!-- <img src="../assets/pngegg4.png" alt="logo-pokemon" class="logoUtama"> -->
+<br>
+      <h1 id="title2">Register Page</h1>
+      <br>
   
         <div id="credentials">
           <form id="registerForm" action="../script/register_script.js">
@@ -41,17 +68,34 @@
               <br />
               <input class="terms_btn" id="terms_btn" name="terms_btn" type="checkbox" value="true">
             <label for="terms_btn">Agree to Terms and Conditions</label>
+            <div class="submit-button-container">
+              <button class="submit_btn" type="submit">Submit</button>
+            </div>
             </div>
                 
-                <button class="submit_btn" type="submit"> Submit</button>
           </form>
-  
+  <br>
         <div>
   
     </div>
-
-   
-   
-    
+   </div>
+  </div>
   </body>
+  <!-- footer starts here  -->
+  <footer>
+    <div class="footer-container">
+        <p>Follow us on social media:</p>
+        <br>
+        <ul>
+          <li>
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+            <a href="">Instagram</a>
+          </li>
+          <br>
+          <p>2023 VokemonS. All rights reserved.</p>
+        </ul>
+    </div>
+  </footer>
+  <!-- footer ends here  -->
 </html>
