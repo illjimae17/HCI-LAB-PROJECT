@@ -34,17 +34,10 @@ window.onload = function () {
       if (!validateEmail(email)) {
         alert("Invalid Email Address");
         isValid = false;
-      }
-      // end of Email Validation
-
-      // Terms and condition validation
-      if (!document.getElementById("terms_btn").checked) {
-        alert("Terms and condition agreement must be checked");
-        isValid = false;
       } else {
         isValid = true;
       }
-      // end of Terms and condition validation
+      // end of Email Validation
 
       // Password validation
       if (password !== confirmPassword) {
@@ -56,9 +49,19 @@ window.onload = function () {
       }
       // end of Password validation
 
+      // Terms and condition validation
+      if (!document.getElementById("terms_btn").checked) {
+        alert("Terms and condition agreement must be checked");
+        isValid = false;
+      } else {
+        isValid = true;
+      }
+      // end of Terms and condition validation
+
       //creds validation
       if (isValid !== false) {
         console.log("registration success");
+        alert("registration success");
       }
       //end of creds validation
 
