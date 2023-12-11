@@ -76,8 +76,9 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 20 px;
+
   font-weight: bold;
+  transition: 300ms;
 }
 
 nav ul li a:hover {

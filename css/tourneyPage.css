@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.parallax {
+  background-image: url("../assets/b883fc84b57235e6fe57f409716ae68d.gif");
+
+  min-height: 100vh;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+/* navbar dkk */
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-pokemon {
+  width: 190px;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  width: 30px;
+  cursor: pointer;
+  filter: invert();
+  margin-left: 40px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+
+  font-weight: bold;
+  transition: 300ms;
+}
+
+nav ul li a:hover {
+  font-size: 22px;
+  /* color: #f99417; */
+  text-shadow: 1px 1px 10px rgb(255, 162, 0),
+    1px 4px 20px rgba(255, 149, 0, 0.25);
+}
+
+footer {
+  height: 20%;
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p {
+  font-weight: bold;
+  color: white;
+}
+
+footer a {
+  display: inline-flex;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+footer a:hover {
+  scale: 1.2;
+}
+/* end of navbar and footer  */
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.content-container {
+  text-align: center;
+  padding: 2rem;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 1rem 1rem 0px 0px;
+  height: auto;
+}
+
+.matches {
+  width: 65rem;
+  height: auto;
+  padding: 5rem;
+}
+.matches-history {
+  width: 65rem;
+  height: auto;
+  padding: 5rem;
+}
+
+.matches.a {
+  background-image: url("../assets/majestic-4k-purple-swirls-x53n9zqdyi3kgngx.jpg");
+  background-size: cover;
+  display: inline-flex;
+  color: white;
+  padding: 3rem;
+  border-radius: 2rem;
+  margin: 2rem 0 2rem 0;
+  border-style: outset;
+  border-color: goldenrod;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.matches.a:hover {
+  border-width: 0.5rem;
+}
+
+.matches.b {
+  background-image: url("../assets/majestic-4k-purple-swirls-x53n9zqdyi3kgngx.jpg");
+  background-size: cover;
+  display: inline-flex;
+  color: white;
+  padding: 3rem;
+  border-radius: 2rem;
+  margin: 2rem 0 2rem 0;
+  border-style: outset;
+  border-color: gray;
+  filter: brightness(0.5);
+  text-align: center;
+}
+.matches.c {
+  background-image: url("../assets/majestic-4k-purple-swirls-x53n9zqdyi3kgngx.jpg");
+  background-size: cover;
+  display: inline-flex;
+  color: white;
+  padding: 3rem;
+  border-radius: 2rem;
+  margin: 2rem 0 2rem 0;
+  border-style: outset;
+  border-color: grey;
+  filter: brightness(0.5);
+}
+.matches-history {
+  background-image: url("../assets/wallpapersden.com_k-cool-2020-art_3840x2160.jpg");
+  background-size: cover;
+  display: inline-flex;
+  color: white;
+  padding: 3rem;
+  border-radius: 2rem;
+  margin: 2rem 0 2rem 0;
+  border-style: outset;
+  border-color: grey;
+  filter: brightness(0.5);
+  filter: grayscale();
+  transition: 300ms;
+  cursor: pointer;
+}
+.matches-history:hover {
+  border-width: 0.5rem;
+}
+.trainers-a img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  padding: 0.5rem;
+  margin: auto 1rem auto 0px;
+}
+.trainers-b img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  padding: 1rem;
+  margin: auto 0px auto 1rem;
+}
+
+.trainers-a {
+  display: inline-flex;
+  flex-direction: row;
+  text-align: left;
+}
+.trainers-b {
+  justify-content: flex-end;
+  display: inline-flex;
+  text-align: right;
+  align-content: flex-end;
+}
+
+.trainer-credentials {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.match-details {
+  text-align: center;
+  margin: 0px auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.match-details p {
+  margin: 1rem 0 1rem 0;
+}
+.details {
+  font-weight: bold;
+}
+
+.trainer-logo-1 {
+  filter: invert();
+}
