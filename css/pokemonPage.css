@@ -52,7 +52,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
- 
+
   font-weight: bold;
   transition: 300ms;
 }
@@ -115,9 +115,13 @@ footer a:hover {
     1px 4px 20px rgba(255, 149, 0, 0.25);
 }
 
-.characters-container {
+/* .characters-container {
   display: inline-grid;
   grid-template-columns: auto auto auto auto;
+} */
+.characters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 }
 
 .char-cards {
