@@ -16,7 +16,7 @@
   box-sizing: border-box;
 } */
 
-.parallax {
+body {
   background-image: url("../assets/b883fc84b57235e6fe57f409716ae68d.gif");
 
   min-height: 100dvh;
@@ -229,4 +229,30 @@ h1:hover {
 
 .test {
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+
+  .logo-pokemon {
+    margin: 15px 0;
+  }
 }

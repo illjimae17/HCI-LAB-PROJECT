@@ -4,7 +4,7 @@
   font-family: "Lexend Deca", sans-serif;
 }
 
-.parallax {
+body {
   background-image: url("../assets/b883fc84b57235e6fe57f409716ae68d.gif");
 
   min-height: 100vh;
@@ -226,4 +226,53 @@ h1 {
 
 .trainer-logo-1 {
   filter: invert();
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+
+  .logo-pokemon {
+    margin: 15px 0;
+  }
+
+  .matches,
+  .matches-history {
+    width: auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .trainers-a,
+  .trainers-b {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .trainers-a img,
+  .trainers-b img {
+    margin: 0 auto 15px;
+  }
+
+  .tournament-history {
+    margin: 0px auto;
+  }
 }

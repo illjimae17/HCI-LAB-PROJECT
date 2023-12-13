@@ -4,8 +4,7 @@
   font-family: "Lexend Deca", sans-serif;
 }
 
-
-.parallax {
+body {
   /* The image used */
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../assets/vapor.gif);
@@ -235,4 +234,25 @@ footer a {
 
 footer a:hover {
   scale: 1.2;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+
+  .logo-pokemon {
+    margin: 15px 0;
+  }
 }

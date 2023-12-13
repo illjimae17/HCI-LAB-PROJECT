@@ -4,7 +4,7 @@
   font-family: "Lexend Deca", sans-serif;
 }
 
-.parallax {
+body {
   /* The image used */
   background-image: url("../assets/b883fc84b57235e6fe57f409716ae68d.gif");
 
@@ -67,7 +67,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
- 
+
   font-weight: bold;
   transition: 300ms;
 }
@@ -123,7 +123,7 @@ p {
   margin-top: 30px;
   margin-left: 5px;
   border: 0;
-  border-radius: 20px;
+  border-radius: 50px;
   font-weight: bold;
   outline: none;
   cursor: pointer;
@@ -142,7 +142,7 @@ p {
   margin-top: 30px;
   margin-left: 5px;
   border: 0;
-  border-radius: 20px;
+  border-radius: 50px;
   font-weight: bold;
   outline: none;
   cursor: pointer;
@@ -219,6 +219,7 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 1rem;
 }
 
 footer p {
@@ -237,4 +238,30 @@ footer a {
 
 footer a:hover {
   scale: 1.2;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+
+  .logo-pokemon {
+    margin: 15px 0;
+  }
 }
